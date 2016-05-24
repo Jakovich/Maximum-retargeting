@@ -5,10 +5,10 @@ var plumber = require("gulp-plumber");
 //var uglify = require("gulp-uglify");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-//var imagemin = require("gulp-imagemin");
-//var csso = require("gulp-csso")
-//var server = require("browser-sync");
-
+var imagemin = require("gulp-imagemin");
+var csso = require("gulp-csso")
+var server = require("browser-sync");
+var rename = require("gulp-rename");
 
 gulp.task("style", function(){
   gulp.src("less/style.less")
@@ -29,5 +29,34 @@ gulp.task("style", function(){
     
   ]))
   
-  .pipe(gulp.dest("css"));
-})
+  .pipe(gulp.dest("css"))
+  .pipe(csso())
+  .pipe(rename("style.min.css"))
+  .pipe(gulp.dest("css"))
+  .pipe(server.reload({stream: true}));
+});
+
+gulp.task("image", function(){
+  return gulp.src("img/**/*.{png,jpg,gif}")
+  
+  .pipe(imagemin({
+    optimizationLevel: 3,
+    progressive: true 
+  }))
+  .pipe(gulp.dest("img"))
+});
+
+gulp.task("show", ["style"], function(){
+  server.init({
+    server: ".",
+    notify: false,
+    open: true,
+    ui: false
+  });
+  
+  gulp.watch("less/**/*.less", ["style"]);
+   gulp.watch("*.html")     
+     .on("change", server.reload);
+
+  
+});

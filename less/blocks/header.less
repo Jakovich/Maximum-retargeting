@@ -1,0 +1,216 @@
+.main-header {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 50;
+}
+.main-header .layout {
+  .clearfix();
+  padding: 0;
+}
+
+
+div#header {
+  height: 70px;
+  padding-bottom: 0;
+  padding-top: 40px;
+}
+div#header a {
+  text-decoration: none;
+}
+div#header a:hover {
+}
+div#header .a2:hover {
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+}
+div#headerMenuLine {
+  background: #272727 none repeat scroll 0 0;
+  height: 46px;
+}
+div#headerLogoLine {
+  background: #efefef none repeat scroll 0 0;
+  height: 100px;
+}
+div#logo {
+  float: left;
+}
+div#logo img {
+  width: 100%;
+}
+
+div#header .header-phone-address {
+  float: right;
+  text-align: right;
+  color: #5b5b5b;
+}
+div#header .header-phone-order {
+  background: rgba(0, 0, 0, 0) url("../img/PublicPage.header.icons.png") no-repeat scroll -34px 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 34px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0.7em;
+  width: 34px;
+}
+div#header .header-mail {
+  background: rgba(0, 0, 0, 0) url("../img/PublicPage.header.icons.png") no-repeat scroll 0 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 34px;
+  margin-left: 10px;
+  margin-top: 0.7em;
+  width: 34px;
+}
+div#header .header-phone-order:hover {
+  background-position: -34px -34px;
+}
+div#header .header-mail:hover {
+  background-position: 0 -34px;
+}
+div#header .header-address {
+  display: inline-block;
+  margin-left: 1em;
+}
+div#header .header-phone {
+  cursor: pointer;
+  float: left;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 0.8em;
+  text-decoration: underline;
+}
+div#header .header-phone:hover {
+  text-decoration: none;
+}
+div#header .header-soc-net {
+  background: rgba(0, 0, 0, 0) url("../img/PublicPage.header-soc-icons.png") no-repeat scroll 0 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 24px;
+  margin-left: 8px;
+  margin-top: 1em;
+  width: 24px;
+}
+div#header .header-soc-net:hover {
+  background-position: 0 -24px;
+}
+div#header .header-soc-net--inst {
+  background-position: -24px 0;
+}
+div#header .header-soc-net--inst:hover {
+  background-position: -24px -24px;
+}
+div#header .header-soc-net--vk {
+  background-position: -49px 0;
+  width: 25px;
+}
+div#header .header-soc-net--vk:hover {
+  background-position: -49px -24px;
+}
+div#header .header-soc-net--yt {
+  background-position: -74px 0;
+  width: 22px;
+}
+div#header .header-soc-net--yt:hover {
+  background-position: -74px -24px;
+}
+div.menu {
+  float: left;
+  height: 60px;
+  margin-left: 8%;
+}
+.menu ul.l0 {
+  height: 100%;
+  margin: 0;
+}
+.menu li.l0 {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.menu li.l0.first {
+}
+.menu li.l0:hover {
+}
+.menu li.l0.open {
+}
+.menu a.l0 {
+  color: #989898;
+  display: block;
+  font: 16px/60px Arial;
+  height: 60px;
+  padding: 0 15px;
+  text-decoration: none;
+}
+.menu a.l0:hover {
+  color: #47494d;
+  text-decoration: none;
+}
+.menu a.l0.first {
+}
+.menu a.l0.open {
+  color: #dc1632;
+}
+.menu div.children {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  left: -25px;
+  min-width: 150px;
+  padding: 10px 0;
+  position: absolute;
+  top: 60px;
+  z-index: 10;
+}
+.menu div.children::before {
+  background: #fff none repeat scroll 0 0;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  content: "";
+  height: 20px;
+  left: 65px;
+  position: absolute;
+  top: -11px;
+  transform: rotate(45deg);
+  width: 20px;
+  z-index: 11;
+}
+.menu li.menuItem.withChildren:hover div.children {
+  display: block;
+}
+.menu div.children ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.menu div.children a {
+  color: #989898;
+  display: block;
+  font: 16px Arial;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.menu div.children a:hover {
+  color: #47494d;
+  text-decoration: none;
+}
+.menu div.children a.open {
+  color: #dc1632;
+}
+
+.main-header--to {
+  position: absolute;
+  width: 100%;
+  min-width: 1355px;
+  div#header {
+    height: 80px;
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+}
