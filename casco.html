@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Максимум КАСКО</title>
+  
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="wrapper">
+      <div class="layout2" id="header">
+        <div class="layout">
+          <div id="logo">
+            <img title="Автосалон «Максимум» " src="img/logo.png" class="logo">
+          </div>
+          <div class="header-phone-address">
+            <div onclick="Form.showModal()" class="header-phone-order"></div>					
+            <div class="header-phone">
+              <span onclick="Form.showModal()">			+7 (812)<strong>777-77-11</strong></span>					
+              </div>
+              <!--<a href="mailto:dgmarketing@maximum-avto.ru" class="header-mail"></a>-->
+              <a class="header-soc-net header-soc-net--fb" href="https://www.facebook.com/Автохолдинг-Максимум-199562167064125/"></a>
+              <a class="header-soc-net header-soc-net--inst" href="https://www.instagram.com/mir_maximum/"></a>
+              <a class="header-soc-net header-soc-net--vk" href="http://vk.com/spb_maximum"></a>
+              <a class="header-soc-net header-soc-net--yt" href="https://www.youtube.com/channel/UCxI2iUhG_m8PLEmjPwDFt9w?sub_confirmation=1"></a>
+          </div>
+
+          <div class="menu noPrint">
+            <ul class="menu l0">
+              <li class="menuItem first withChildren l0 i0" id="menu_138">						
+                <div class="name menuItem first withChildren l0 i0"><a title="Холдинг" href="/holding/" class="menuItemName menuItem first withChildren l0 i0">Холдинг<span></span></a>
+                </div>
+                <div id="subMenu_138" class="children menuItem first withChildren l0 i0">
+                  <ul class="menu l1">
+                    <li class="menuItem first l1 i0" id="menu_145">						
+                      <div class="name menuItem first l1 i0"><a title="Максимум - официальный дилер Honda в Санкт-Петербурге" href="/brand-honda/" class="menuItemName menuItem first l1 i0">Honda<span></span></a></div>
+                    </li>
+                    <li class="menuItem l1 i1" id="menu_144">						
+                      <div class="name menuItem l1 i1"><a title="" href="/brand-ford/" class="menuItemName menuItem l1 i1">Ford<span></span></a></div>
+                    </li>
+                    <li class="menuItem l1 i2" id="menu_146">						
+                      <div class="name menuItem l1 i2"><a title="Максимум - официальный дилер Hyundai (Хендай) в Санкт-Петербурге" href="/brand-hyundai/" class="menuItemName menuItem l1 i2">Hyundai<span></span></a></div>
+                    </li>
+                    <li class="menuItem l1 i3" id="menu_147">						
+                      <div class="name menuItem l1 i3"><a title="" href="/brand-mitsubishi/" class="menuItemName menuItem l1 i3">Mitsubishi<span></span></a></div>
+                    </li>
+                    <li class="menuItem l1 i4" id="menu_148"><div class="name menuItem l1 i4"><a title="" href="/brand-suzuki/" class="menuItemName menuItem l1 i4">Suzuki<span></span></a></div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menuItem l0 i1" id="menu_136">
+                <div class="name menuItem l0 i1"><a title="Сервис «Максимум»" href="/service/" class="menuItemName menuItem l0 i1">Сервис<span></span></a></div>
+              </li>
+              <li class="menuItem l0 i2" id="menu_140"><div class="name menuItem l0 i2"><a title="Акции «Максимум»" href="/actions/" class="menuItemName menuItem l0 i2">Акции<span></span></a></div>
+              </li>
+              <li class="menuItem l0 i3" id="menu_139">						
+                <div class="name menuItem l0 i3"><a title="Вакансии Максимум в Санкт-Петербурге" href="/vacancies/" class="menuItemName menuItem l0 i3">Вакансии<span></span></a></div>
+              </li>
+              <li class="menuItem l0 i4" id="menu_152">
+                <div class="name menuItem l0 i4"><a title="Блог" href="/blog/" class="menuItemName menuItem l0 i4">Блог<span></span></a></div>
+              </li>
+              <li class="menuItem l0 i5" id="menu_135">						
+                <div class="name menuItem l0 i5"><a title="Контакты" href="/contacts/" class="menuItemName menuItem l0 i5">Контакты<span></span></a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="insurance-header">
+    <div class="wrapper">
+      <nav class="insurance-nav">
+        <ul class="insurance-menu">
+          <li><a href="#">ОСАГО</a></li>
+          <li><a href="#">КАСКО</a></li>
+          <li><a href="#">Зеленая карта</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="casco-intro">
+    <div class="wrapper">
+      <div class="insurance-period">
+        <div class="insurance-period__counter">
+          <div class="insurance-period__text">До конца вашего страхового полиса КАСКО<br></div>
+          <div class="insurance-period__counter-wrap">осталось <div class="casco-counter"></div> дней</div>
+        </div>
+        <div class="casco-intro__form">
+          <form action="post" class="insurance-form insurance-form--intro">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="text" name="phone" placeholder="Ваш телефон">
+            <button type="submit">Заказать полис</button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="casco-intro__advantages">
+       <h2 class="casco-intro__advantages-title">Преимущества работы с Максимум</h2>
+       <div class="casco-intro__advantages-container">
+          <div class="casco-intro__advantage casco-intro__advantage--reliable">Надежные страховые компании</div>
+          <div class="casco-intro__advantage casco-intro__advantage--losses">Удалённое урегулирование убытков</div>
+          <div class="casco-intro__advantage casco-intro__advantage--sale">Скидка при покупке ОСАГО</div>
+        </div>
+    </div>
+    </div>
+  </section>
+  
+  <section class="casco-service">
+    <div class="wrapper">
+      <h2 class="casco-service__title">Удалённое урегулирование убытков</h2>
+      <div class="casco-service__explic">
+        <div class="casco-service__text">
+          Надоели очереди в страховых компаниях? У нас вашим страховым случаем займётся личный менеджер
+        </div>
+      </div>
+    </div>
+              <div class="casco-service__img">
+        <div class="wrapper">
+        <div class="casco-service__img-inner">
+        <div class="casco-service__logo">
+          <img src="img/icon-service-logo.png" alt="" width="77" height="57">
+           15 минут
+         </div>
+          <img class="casco-service__manager" src="img/photo-manager.png" alt="Менеджер" width="293" height="465">
+          </div>
+          </div>
+        </div>
+       <div class="wrapper">
+        <div class="casco-service__items">
+          <div class="casco-service__item casco-service__item--view"><span>1</span>Осмотр автомобиля и составление сметы</div>
+          <div class="casco-service__item casco-service__item--estimate"><span>2</span>Согласование сметы со страховой</div>
+          <div class="casco-service__item casco-service__item--spares"><span>3</span>Заказ запасных частей</div>
+          <div class="casco-service__item casco-service__item--repair"><span>4</span>Ремонт</div>
+          <div class="casco-service__item casco-service__item--happy"><span>5</span>Счастливый владелец</div>
+        </div>
+        </div>
+
+      <div class="casco-service__video">
+        <div class="wrapper">
+          <div class="casco-service__video-items">
+            <div class="casco-service__video-item">
+              <video src="" poster="img/video-poster-gep.jpg"></video>
+              <div class="casco-service__video-explic">
+                ГЭП
+              </div>
+            </div>
+            <div class="casco-service__video-item">
+              <video src="" poster="img/video-poster-franchise.jpg"></video>
+              <div class="casco-service__video-explic">
+                Франшиза
+              </div>
+            </div>
+          </div>
+          <div class="casco-service__link">Смотреть еще</div> 
+        </div>
+      </div>
+  </section>
+  
+  <div class="wrapper">
+    <section class="insurance-help">
+        <h2 class="insurance-help__title">Карта Максимум “Помощь на дороге”</h2>
+        <div class="insurance-help__inner">
+          <div class="insurance-help__items">
+            <div class="insurance-help__item insurance-help__item--onroad">Техпомощь на&nbsp;дороге</div>
+            <div class="insurance-help__item insurance-help__item--evacuation">Эвакуация автомобиля</div>
+            <div class="insurance-help__item insurance-help__item--info">Круглосуточная справка</div>
+            <div class="insurance-help__item insurance-help__item--juridic">Юридическая помощь</div>
+            <div class="insurance-help__item insurance-help__item--quantity">Неограниченное число водителей</div>
+            <div class="insurance-help__item insurance-help__item--time">Время прибытия 40-60 минут</div>
+          </div>
+          <div class="insurance-help__form">
+            <form action="post" class="insurance-form insurance-form--help">
+              <input type="text" name="name" placeholder="Ваше имя">
+              <input type="text" name="phone" placeholder="Ваш телефон">
+              <button type="submit">Заказать</button>
+            </form>
+          </div>
+        </div>
+    </section>
+  </div>
+  
+  <section class="address">
+    <div class="wrapper">
+      <div class="maps">
+        <div class="map-item"><div style="font-weight: bold; font-size: 1.4em; color: rgb(220, 22, 50); font-family: 'PT Sans'; line-height: normal;" class="zag">Максимум Лахта</div>
+
+          <div style="margin: 1em 0px; font-size: 1.2em; line-height: 1.8em; color: rgb(118, 118, 118); font-family: 'PT Sans';" class="context"><i style="color: rgb(186, 186, 186);">Автосалоны: </i>&nbsp;Honda, Suzuki и автомобили с пробегом<br>
+            <i style="color: rgb(186, 186, 186);">Адрес: </i>&nbsp;Торфяная дор., 8 (100 шагов от ст.м. Старая Деревня)<br>
+            <i style="color: rgb(186, 186, 186);">Режим работы: </i>&nbsp;9:00-21:00
+
+          <div class="tel"><span style="background-position:-110px -15px;" class="img">&nbsp;</span> +7 (812) 777-77-65</div>
+
+          <div class="tel"><span style="background-position:-210px -14px;" class="img">&nbsp;</span> +7 (812) 7777-008</div>
+    Автомобили с пробегом: +7 (812) 77777-65</div>
+        </div>
+        <div class="map-item"><div style="font-weight: bold; font-size: 1.4em; color: rgb(220, 22, 50); font-family: 'PT Sans'; line-height: normal;" class="zag">Максимум Руставели</div>
+
+        <div style="margin: 1em 0px; font-size: 1.2em; line-height: 1.8em; color: rgb(118, 118, 118); font-family: 'PT Sans';" class="context"><i style="color: rgb(186, 186, 186);">Автосалоны: </i>&nbsp;Ford, Hyundai, Mitsubishi и автомобили с пробегом<br>
+          <i style="color: rgb(186, 186, 186);">Адрес: </i>&nbsp;Руставели., 53<br>
+          <i style="color: rgb(186, 186, 186);">Режим работы: </i>&nbsp;9:00-21:00
+
+        <div class="tel"><span style="background-position:-60px -13px;" class="img">&nbsp;</span> +7 (812) 777-11-00</div>
+
+        <div class="tel"><span style="background-position:-160px -13px;" class="img">&nbsp;</span> +7 (812) 7777-002</div>
+
+        <div class="tel"><span style="background-position:-10px -13px;" class="img">&nbsp;</span> +7 (812) 612-26-48</div>
+    Автомобили с пробегом: +7 (812) 77777-65</div>
+      </div>
+
+       <div class="clear"></div>
+
+
+        <div id="map1"></div>
+      
+
+      </div>
+    </div>
+  </section> 
+  
+  
+  <footer class="main-footer">
+    <div class="wrapper">
+      <div id="footer">
+          <div class="layout">
+            <div class="footer-logo">
+              <a href="/"><img alt="logo" src="http://максимум.рф/i/logo.footer.png"></a>
+            </div>
+            <div class="footer-col">
+              <ul class="footer-list menuFooter l0">
+                <li class="menuFooterItem first l0 i0" id="menu_145">
+                  <div class="name menuFooterItem first l0 i0"><a title="Максимум - официальный дилер Honda в Санкт-Петербурге" href="/brand-honda/" class="menuItemName menuFooterItem first l0 i0">Honda<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i1" id="menu_144">                        
+                  <div class="name menuFooterItem l0 i1"><a title="" href="/brand-ford/" class="menuItemName menuFooterItem l0 i1">Ford<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i2" id="menu_146">                        
+                  <div class="name menuFooterItem l0 i2"><a title="Максимум - официальный дилер Hyundai (Хендай) в Санкт-Петербурге" href="/brand-hyundai/" class="menuItemName menuFooterItem l0 i2">Hyundai<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i3" id="menu_147">                        
+                  <div class="name menuFooterItem l0 i3"><a title="" href="/brand-mitsubishi/" class="menuItemName menuFooterItem l0 i3">Mitsubishi<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i4" id="menu_148">                        
+                  <div class="name menuFooterItem l0 i4"><a title="" href="/brand-suzuki/" class="menuItemName menuFooterItem l0 i4">Suzuki<span></span></a></div>
+                </li>                
+              </ul>
+
+            </div>
+
+            <div class="footer-col">
+              <ul class="footer-list menuFooter l0">
+                <li class="menuFooterItem first l0 i0" id="menu_138">                        
+                  <div class="name menuFooterItem first l0 i0"><a title="Холдинг" href="/holding/" class="menuItemName menuFooterItem first l0 i0">Холдинг<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i1" id="menu_136"><div class="name menuFooterItem l0 i1"><a title="Сервис «Максимум»" href="/service/" class="menuItemName menuFooterItem l0 i1">Сервис<span></span></a></div>
+                </li>
+                <li class="menuFooterItem l0 i2" id="menu_151"><div class="name menuFooterItem l0 i2"><a title="" href="/contacts/" class="menuItemName menuFooterItem l0 i2">Как нас найти<span></span></a></div>
+                </li>                
+              </ul>
+
+            </div>
+
+            <div class="footer-col">
+              <ul class="footer-list menuFooter l0">
+                <li class="menuFooterItem first l0 i0" id="menu_140"><div class="name menuFooterItem first l0 i0"><a title="Акции «Максимум»" href="/actions/" class="menuItemName menuFooterItem first l0 i0">Акции (20)<span></span></a></div>
+                </li>               
+              </ul>
+
+            </div>
+
+            <div class="footer-col">
+              <ul class="footer-list menuFooter l0">
+                <li class="menuFooterItem first l0 i0" id="menu_139">                        
+                  <div class="name menuFooterItem first l0 i0"><a title="Вакансии Максимум в Санкт-Петербурге" href="/vacancies/" class="menuItemName menuFooterItem first l0 i0">Вакансии (8)<span></span></a></div>
+                </li>                
+              </ul>
+
+          </div>
+
+
+          <a target="_blank" title="Создание и продвижение сайта осуществляет студия PlayNext" href="http://www.playnext.ru/" id="PlayNext"></a>
+
+          <div id="up-scroll"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/flipclock.min.js"></script>
+  <script src="js/casco.min.js"></script>
+</body>
+</html>
