@@ -1,0 +1,59 @@
+.services__items {
+  display: flex;
+  justify-content: center;
+}
+
+.services__item {
+  font-size: 24px;
+  color: #4a4a4a;
+  text-align: center;
+  position: relative;
+  padding-top: 80px;
+  margin: 50px;
+  flex-basis: 140px;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-image: url("../img/sprite.png");
+  }
+}
+
+.services__item--test {
+  &::before {
+    top: 20px;
+    width: @icon-test-width;
+    height: @icon-test-height;
+    background-position: @icon-test-offset-x @icon-test-offset-y;
+  }
+}
+
+.services__item--trade {
+  &::before {
+    width: @icon-trade-width;
+    height: @icon-trade-height;
+    background-position: @icon-trade-offset-x @icon-trade-offset-y;
+  }
+}
+
+.services__item--credit {
+  &::before {
+    width: @icon-credit-width;
+    height: @icon-credit-height;
+    background-position: @icon-credit-offset-x @icon-credit-offset-y;
+  }
+}
+
+.services__item--insurance {
+  
+  &::before {
+    top: 10px;
+    width: @icon-insurance-width;
+    height: @icon-insurance-height;
+    background-position: @icon-insurance-offset-x @icon-insurance-offset-y;
+  }
+}

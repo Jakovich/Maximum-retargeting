@@ -1,0 +1,80 @@
+.advantages {
+  border: @border-big;
+  margin-bottom: 50px;
+  text-align: center;
+  &:hover {
+    border-color: #767676;
+  }
+}
+
+.advantages__title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 37px;
+  color: #767676;
+  margin-bottom: 90px;
+}
+
+
+.advantages__items {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.advantages__item {
+  font-size: 24px;
+  color: #777777;
+  text-align: center;
+  position: relative;
+  padding-top: 110px;
+  margin-bottom: 75px;
+  flex-basis: 220px;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-image: url("../img/sprite.png");
+  }
+}
+
+.advantages__item--dinamic {
+  &::before {
+    width: @icon-dinamic-width;
+    height: @icon-dinamic-height;
+    background-position: @icon-dinamic-offset-x @icon-dinamic-offset-y;
+  }
+}
+
+.advantages__item--mark {
+  &::before {
+    width: @icon-mark-width;
+    height: @icon-mark-height;
+    background-position: @icon-mark-offset-x @icon-mark-offset-y;
+  }
+}
+
+.advantages__item--rating {
+  &::before {
+    width: @icon-rating-width;
+    height: @icon-rating-height;
+    background-position: @icon-rating-offset-x @icon-rating-offset-y;
+  }
+}
+ 
+.advantages__item--standart {
+  &::before {
+    width: @icon-standart-width;
+    height: @icon-standart-height;
+    background-position: @icon-standart-offset-x @icon-standart-offset-y;
+  }
+}
+
+.advantages__form {
+  padding-bottom: 60px;
+  display: inline-block;
+}

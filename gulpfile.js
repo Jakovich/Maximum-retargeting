@@ -11,6 +11,7 @@ var imagemin = require("gulp-imagemin");
 var csso = require("gulp-csso")
 var server = require("browser-sync");
 var rename = require("gulp-rename");
+var spritesmith = require("gulp.spritesmith");
 
 gulp.task("style", function(){
   gulp.src("less/style.less")
@@ -61,11 +62,20 @@ gulp.task("clean", function () {
     .pipe(clean());
 });
 
+gulp.task("sprite", function(){
+  var spriteData = gulp.src('img/icons/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.less'
+  }));
+    spriteData.img.pipe(gulp.dest('img')); 
+    spriteData.css.pipe(gulp.dest('less/sprites')); 
+});
+
 gulp.task("copy", function() {
   gulp.src("*.html")
   .pipe(copy())
   .pipe(gulp.dest("build"))
-})
+});
 
 gulp.task("show", function(){
   server.init({
@@ -77,7 +87,8 @@ gulp.task("show", function(){
   
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html", ["copy"]).on("change", server.reload);
-  gulp.watch("js/*js", ["minjs"]).on("change", server.reload);
+  gulp.watch("js/*.js", ["minjs"]).on("change", server.reload);
+  gulp.watch("img/*", ["image"]).on("change", server.reload);
 });
 
 gulp.task("build", ["clean", "copy", "style", "minjs", "image"]);
