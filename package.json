@@ -30,6 +30,7 @@
     "node": "^5.0.0"
   },
   "scripts": {
+    "test": "editorconfig-tools check *",
     "build": "gulp build",
     "start": "npm run build && gulp show"
   }
