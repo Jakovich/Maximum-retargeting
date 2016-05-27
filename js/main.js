@@ -14,7 +14,7 @@ $(document).ready(function() {
   $('.carousel').carousel({
  
     directionNav:false,
-    shadow:false,
+  
     buttonNav:'bullets',
     autoplay: false,
     hMargin:0.21,
@@ -22,7 +22,8 @@ $(document).ready(function() {
     frontHeight: 535,
     carouselWidth: 930,
     carouselHeight: 595,
-    backOpacity: 0.6
+    backOpacity: 0.6,
+    shadow:true
   
   });
   
