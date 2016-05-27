@@ -13,6 +13,7 @@
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "browser-sync": "2.11.1",
+    "editorconfig-tools": "^0.1.1",
     "gulp": "3.9.1",
     "gulp-contrib-clean": "0.0.2",
     "gulp-contrib-copy": "^0.1.2",
