@@ -98,6 +98,6 @@ $(document).ready(function() {
     }
   };
   
-  showImage("fordLink");
+  showImage("mitsubishiLink");
   
 });
