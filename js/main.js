@@ -9,18 +9,18 @@ $(document).ready(function() {
   });
   
   //настройка сладера
-  $('.carousel').carousel({
+  $(".carousel").carousel({
 
-    directionNav:false,
-    buttonNav:'bullets',
+    directionNav: false,
+    buttonNav: "bullets",
     autoplay: false,
-    hMargin:0.21,
+    hMargin: 0.21,
     frontWidth: 800,
     frontHeight: 535,
     carouselWidth: 930,
     carouselHeight: 595,
     backOpacity: 0.6,
-    shadow:true
+    shadow: true
   
   });
   
@@ -32,6 +32,8 @@ $(document).ready(function() {
   var imgSmallSecond = document.querySelector(".images__small--second img");
   var imgSmallThird = document.querySelector(".images__small--third img");
   
+  
+  //задаем адреса картинок по макркам и размерам
   var FORD = {
     "BIG": "img/ford-focus-1.jpg",
     "LONG": "img/ford-focus-3.jpg",
@@ -62,50 +64,40 @@ $(document).ready(function() {
     "SMALL": "img/honda-crv-2.jpg"
   };
   
+  //функция установки адресов картинок
+  var setSrc = function(carBig, carLong, carSmallFirst, carSmallSecond, carSmallThird) {
+    imgBig.src = carBig.BIG;
+    imgLong.src = carLong.LONG;
+    imgSmallFirst.src = carSmallFirst.SMALL;
+    imgSmallSecond.src = carSmallSecond.SMALL;
+    imgSmallThird.src = carSmallThird.SMALL; 
+  };
+  
+  //функция показа картинок в заисимости от параметра
   var showImage = function(par) {
     switch(par){
       case "hyundaiLink":
-        imgBig.src = HYUNDAI.BIG;
-        imgLong.src = HONDA.LONG;
-        imgSmallFirst.src = MITSUBISHI.SMALL;
-        imgSmallSecond.src = SUZUKI.SMALL;
-        imgSmallThird.src = FORD.SMALL;
+        setSrc(HYUNDAI, HONDA, MITSUBISHI, SUZUKI, FORD);
         break;
         
       case "hondaLink":
-        imgBig.src = HONDA.BIG;
-        imgLong.src = HYUNDAI.LONG;
-        imgSmallFirst.src = MITSUBISHI.SMALL;
-        imgSmallSecond.src = SUZUKI.SMALL;
-        imgSmallThird.src = FORD.SMALL;
+        setSrc(HONDA, MITSUBISHI, HYUNDAI, FORD, SUZUKI);
         break;
         
       case "fordLink":
-        imgBig.src = FORD.BIG;
-        imgLong.src = SUZUKI.LONG;
-        imgSmallFirst.src = MITSUBISHI.SMALL;
-        imgSmallSecond.src = HYUNDAI.SMALL;
-        imgSmallThird.src = HONDA.SMALL;
+        setSrc(FORD, HONDA, HYUNDAI, MITSUBISHI, SUZUKI);
         break;
         
       case "suzukiLink":
-        imgBig.src = SUZUKI.BIG;
-        imgLong.src = MITSUBISHI.LONG;
-        imgSmallFirst.src = HYUNDAI.SMALL;
-        imgSmallSecond.src = FORD.SMALL;
-        imgSmallThird.src = HONDA.SMALL;
+        setSrc(SUZUKI, HYUNDAI, HONDA, MITSUBISHI, FORD);
         break;
         
       case "mitsubishiLink":
-        imgBig.src = MITSUBISHI.BIG;
-        imgLong.src = HONDA.LONG;
-        imgSmallFirst.src = HYUNDAI.SMALL;
-        imgSmallSecond.src = FORD.SMALL;
-        imgSmallThird.src = SUZUKI.SMALL;
+        setSrc(MITSUBISHI, FORD, HYUNDAI, HONDA, SUZUKI);
         break;
     }
   };
   
-  showImage("mitsubishiLink");
+  showImage("fordLink");
   
 });
