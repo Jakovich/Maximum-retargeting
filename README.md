@@ -1,4 +1,4 @@
-Maximum retargeting site ![travis](https://travis-ci.org/Jakovich/Maximum-retargeting.svg?branch=master) 
+Maximum retargeting site ![travis](https://travis-ci.org/Jakovich/Maximum-retargeting.svg?branch=master)[https://travis-ci.org/Jakovich/Maximum-retargeting] 
 
 For the creation of a production version of the site, you need to  enter in the console the following commands:
  
