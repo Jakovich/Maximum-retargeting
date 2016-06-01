@@ -47,7 +47,6 @@ $(document).ready(function() {
   
   var currentMark = GETArr.mark;
   
-  currentMark = "hyundai"; //для примера
   
   
   //задаем адреса картинок по макркам и размерам
