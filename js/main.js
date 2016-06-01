@@ -32,6 +32,23 @@ $(document).ready(function() {
   var imgSmallSecond = document.querySelector(".images__small--second img");
   var imgSmallThird = document.querySelector(".images__small--third img");
   
+  function parseGetParams() { 
+    var $_GET = {}; 
+    var __GET = window.location.search.substring(1).split("&")
+    if(__GET[0] == "") return false;
+    for(var i=0; i<__GET.length; i++) { 
+      var getVar = __GET[i].split("="); 
+      $_GET[getVar[0]] = typeof(getVar[1])=="undefined" ? "" : getVar[1]; 
+    } 
+    return $_GET; 
+  } 
+  
+  var GETArr = parseGetParams();
+  
+  var currentMark = GETArr.mark;
+  
+  currentMark = "hyundai"; //для примера
+  
   
   //задаем адреса картинок по макркам и размерам
   var FORD = {
@@ -76,28 +93,28 @@ $(document).ready(function() {
   //функция показа картинок в заисимости от параметра
   var showImage = function(par) {
     switch(par){
-      case "hyundaiLink":
+      case "hyundai":
         setSrc(HYUNDAI, HONDA, MITSUBISHI, SUZUKI, FORD);
         break;
         
-      case "hondaLink":
+      case "honda":
         setSrc(HONDA, MITSUBISHI, HYUNDAI, FORD, SUZUKI);
         break;
         
-      case "fordLink":
+      case "ford":
         setSrc(FORD, HONDA, HYUNDAI, MITSUBISHI, SUZUKI);
         break;
         
-      case "suzukiLink":
+      case "suzuki":
         setSrc(SUZUKI, HYUNDAI, HONDA, MITSUBISHI, FORD);
         break;
         
-      case "mitsubishiLink":
+      case "mitsubishi":
         setSrc(MITSUBISHI, FORD, HYUNDAI, HONDA, SUZUKI);
         break;
     }
   };
   
-  showImage("mitsubishiLink");
+  showImage(currentMark);
   
 });
