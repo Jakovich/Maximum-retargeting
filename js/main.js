@@ -116,4 +116,24 @@ $(document).ready(function() {
   
   showImage(currentMark);
   
+
+  
 });
+
+  function switchAddr(id, th) {
+    $('#dop-block #addr .data').each(function(){
+        if($(this).attr('id') == 'data-'+id) $(this).show();
+        else $(this).hide();
+    });
+
+    $('#dop-block .switch').each(function(){
+        if($(this).get(0) == $(th).get(0)) $(th).addClass('active');
+        else $(this).removeClass('active');
+    });
+}
+
+  function switchPoint(id, th) {
+      Map.zoomToPoint(id);
+      $('.switch-addr').removeClass('active');
+      $(th).addClass('active');
+  }
