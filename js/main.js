@@ -15,10 +15,10 @@ $(document).ready(function() {
     buttonNav: "bullets",
     autoplay: false,
     hMargin: 0.21,
-    frontWidth: 800,
-    frontHeight: 535,
-    carouselWidth: 930,
-    carouselHeight: 595,
+    frontWidth: 700,
+    frontHeight: 465,
+    carouselWidth: 925,
+    carouselHeight: 500,
     backOpacity: 0.6,
     shadow: true
   
@@ -49,7 +49,7 @@ $(document).ready(function() {
   
   
   
-  //задаем адреса картинок по макркам и размерам
+  //задаем адреса картинок по маркам и размерам
   var FORD = {
     "BIG": "img/ford-focus-1.jpg",
     "LONG": "img/ford-focus-3.jpg",
@@ -97,11 +97,11 @@ $(document).ready(function() {
         break;
         
       case "honda":
-        setSrc(HONDA, MITSUBISHI, HYUNDAI, FORD, SUZUKI);
+        setSrc(HONDA, SUZUKI, MITSUBISHI, FORD, HYUNDAI);
         break;
         
       case "ford":
-        setSrc(FORD, HONDA, HYUNDAI, MITSUBISHI, SUZUKI);
+        setSrc(FORD, HYUNDAI, HONDA, MITSUBISHI, SUZUKI);
         break;
         
       case "suzuki":
