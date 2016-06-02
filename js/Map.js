@@ -237,7 +237,7 @@ Map.init = function () {
                     [-25, -25], [25, 25]
                 ]
             }/*,*/
-            iconImageHref: '/i/HomePage.map-point.gif', // e.gif',//Map.numberBG.png',
+            iconImageHref: '../img/HomePage.map-point.png', // e.gif',//Map.numberBG.png',
             iconImageSize: [30, 30], // размеры картинки
             iconImageOffset: [-15, -15] // смещение картинки*/
         });
