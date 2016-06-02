@@ -311,6 +311,26 @@
         <div class="contacts-go"><a href="#">Перейти к контактам &gt;</a></div>
       </div>     
       <div id="map" class="noPrint"></div>
+        <script>
+          Map.lat = 59.99;
+          Map.lng = 30.34;
+          Map.zoom = 11;
+          Map.points = {};
+		  Map.points["point1"] = new Map.Point({
+		    id: "point1",
+		    lat: 59.992,
+		    lng: 30.255,
+		    zoom: 12,
+		    html: '<b>Сервис Максимум</b><br />СПб, Торфяная дорога, 8/3'
+		  });
+		Map.points["point2"] = new Map.Point({
+		  id: "point2",
+		  lat: 60.02312048982813,
+		  lng: 30.437426082031177,
+		  zoom: 12,
+		  html: '<b>Сервис Максимум</b><br />Санкт-Петербург, ул. Руставели, д. 53'
+		});
+		</script>
       </div>
     </section>
   </div>
