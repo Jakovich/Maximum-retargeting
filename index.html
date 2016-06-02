@@ -188,152 +188,123 @@
       </div>
 	</div> <!-- END SLIDES -->
   </section>
-  
-    <section class="maps">
-      <div id="mapBox" class="layout2">
-      <div id="dop-block">
-		<div class="zag">Выберите интересующий Вас салон:</div>
-		<div class="switch-addr" id="switch-addr-1" onclick="switchPoint('point1', this);">
-		  <div class="switch" id="switch-honda" onclick="switchAddr('honda', this);">
-		  	<span></span>
-		  </div>
-          <div class="switch" id="switch-suzuki" onclick="switchAddr('suzuki', this);">
-            <span></span>
-          </div>
-          <div class="switch" id="switch-trade1" onclick="switchAddr('trade1', this);">
-            <span></span>
-          </div>
-          <div class="context"> - Торфяная дорога 8</div>
-          <div class="clear"></div>
-		</div>
-		<div class="switch-addr" id="switch-addr-2" onclick="switchPoint('point2', this);">
-          <div class="switch active" id="switch-mitsu" onclick="switchAddr('mitsu', this);">
-            <span></span>
-          </div>
-          <div class="switch" id="switch-ford" onclick="switchAddr('ford', this);">
-            <span></span>
-          </div>
-		  <div class="switch" id="switch-hyundai" onclick="switchAddr('hyundai', this);">
-            <span></span>
-		  </div>
-		  <div class="switch" id="switch-trade2" onclick="switchAddr('trade2', this);">
-		  	<span></span>
-		  </div>
-          <div class="context"> - ул. Руставели, 53</div>
-          <div class="clear"></div>
-		</div>
-        <div class="line"></div>
-
-        <div id="addr">
-          <div class="data" id="data-mitsu" style="display:block;">
-            <div class="zag">Контакты холдинга Mitsubishi:</div>
-            <div class="float-85">Телефон:</div>
-            <div class="float">
-              Отдел продаж:<br>
-              <span class="big">+7 (812) 385-66-28</span>
-            </div>
-            <div class="clear"></div>
-            <div class="float-85">Режим работы:</div>
-            <div class="float">Ежедневно<br>9:00-21:00</div>
-            <div class="clear"></div>                            
-          </div>
-          <div class="data" id="data-ford">
-            <div class="zag">Контакты холдинга Ford:</div>
-            <div class="float-85">Телефон:</div>
-            <div class="float">
-              Отдел продаж:<br>
-              <span class="big">+7 (812) 777 11 00</span>
-            </div>
-            <div class="clear"></div>
-            <div class="float-85">Режим работы:</div>
-            <div class="float">Ежедневно<br>9:00-21:00</div>
-            <div class="clear"></div>                            
-          </div>
-          <div class="data" id="data-honda">
-            <div class="zag">Контакты холдинга Honda:</div>
-            <div class="float-85">Телефон:</div>
-            <div class="float">
-                Отдел продаж:<br>
-                <span class="big">+7 (812) 77777-65</span>
-            </div>
-            <div class="clear"></div>
-            <div class="float-85">Режим работы:</div>
-            <div class="float">Ежедневно<br>9:00-21:00</div>
-            <div class="clear"></div>                            
-          </div>
-          <div class="data" id="data-trade1">
-            <div class="zag">Контакты холдинга Trade-in:</div>
-            <div class="float-85">Телефон:</div>
-            <div class="float">
-              Отдел продаж:<br>
-              <span class="big">+7 (812) 331-09-54</span>
-            </div>
-            <div class="clear"></div>
-            <div class="float-85">Режим работы:</div>
-            <div class="float">Ежедневно<br>9:00-21:00</div>
-            <div class="clear"></div>                            
-          </div>
-          <div class="data" id="data-hyundai">
-            <div class="zag">Контакты холдинга Hyundai:</div>
-            <div class="float-85">Телефон:</div>
-            <div class="float">
-                Отдел продаж:<br>
-                <span class="big">+7 (812) 7777-002</span>
-            </div>
-            <div class="clear"></div>
-            <div class="float-85">Режим работы:</div>
-            <div class="float">Ежедневно<br>9:00-21:00</div>
-            <div class="clear"></div>                            </div>
-          <div class="data" id="data-suzuki">
-            <div class="zag">Контакты холдинга Suzuki:</div>
-            <div class="float-85">Телефон:</div>
-            <div class="float">
-              Отдел продаж:<br>
-              <span class="big">+7 (812) 7777 008</span>
-            </div>
-            <div class="clear"></div>
-            <div class="float-85">Режим работы:</div>
-            <div class="float">Ежедневно<br>9:00-21:00</div>
-            <div class="clear"></div>                            </div>
-          <div class="data" id="data-trade2">
-            <div class="zag">Контакты холдинга Trade-in:</div>
-            <div class="float-85">Телефон:</div>
-            <div class="float">
-              Отдел продаж:<br>
-              <span class="big">+7 (812) 331-09-53</span>
-            </div>
-            <div class="clear"></div>
-            <div class="float-85">Режим работы:</div>
-            <div class="float">Ежедневно<br>9:00-21:00</div>
-            <div class="clear"></div>                       
-          </div>
+   
+  <section class="maps">
+    <div id="mapBox" class="layout2">
+    <div id="dop-block">	<div class="zag">Выберите интересующий Вас салон:</div>	<div class="switch-addr" id="switch-addr-1" onclick="switchPoint('point1', this);">	  <div class="switch" id="switch-honda" onclick="switchAddr('honda', this);">	  	<span></span>	  </div>
+        <div class="switch" id="switch-suzuki" onclick="switchAddr('suzuki', this);">
+          <span></span>
         </div>
-
-        <div class="contacts-go"><a href="#">Перейти к контактам &gt;</a></div>
-      </div>     
-      <div id="map" class="noPrint"></div>
-        <script>
-          Map.lat = 59.99;
-          Map.lng = 30.34;
-          Map.zoom = 11;
-          Map.points = {};
-		  Map.points["point1"] = new Map.Point({
-		    id: "point1",
-		    lat: 59.992,
-		    lng: 30.255,
-		    zoom: 12,
-		    html: '<b>Сервис Максимум</b><br />СПб, Торфяная дорога, 8/3'
-		  });
-		Map.points["point2"] = new Map.Point({
-		  id: "point2",
-		  lat: 60.02312048982813,
-		  lng: 30.437426082031177,
-		  zoom: 12,
-		  html: '<b>Сервис Максимум</b><br />Санкт-Петербург, ул. Руставели, д. 53'
-		});
-		</script>
+        <div class="switch" id="switch-trade1" onclick="switchAddr('trade1', this);">
+          <span></span>
+        </div>
+        <div class="context"> - Торфяная дорога 8</div>
+        <div class="clear"></div>	</div>	<div class="switch-addr" id="switch-addr-2" onclick="switchPoint('point2', this);">
+        <div class="switch active" id="switch-mitsu" onclick="switchAddr('mitsu', this);">
+          <span></span>
+        </div>
+        <div class="switch" id="switch-ford" onclick="switchAddr('ford', this);">
+          <span></span>
+        </div>	  <div class="switch" id="switch-hyundai" onclick="switchAddr('hyundai', this);">
+          <span></span>	  </div>	  <div class="switch" id="switch-trade2" onclick="switchAddr('trade2', this);">	  	<span></span>	  </div>
+        <div class="context"> - ул. Руставели, 53</div>
+        <div class="clear"></div>	</div>
+      <div class="line"></div>
+      <div id="addr">
+        <div class="data" id="data-mitsu" style="display:block;">
+          <div class="zag">Контакты холдинга Mitsubishi:</div>
+          <div class="float-85">Телефон:</div>
+          <div class="float">
+            Отдел продаж:<br>
+            <span class="big">+7 (812) 385-66-28</span>
+          </div>
+          <div class="clear"></div>
+          <div class="float-85">Режим работы:</div>
+          <div class="float">Ежедневно<br>9:00-21:00</div>
+          <div class="clear"></div>                            
+        </div>
+        <div class="data" id="data-ford">
+          <div class="zag">Контакты холдинга Ford:</div>
+          <div class="float-85">Телефон:</div>
+          <div class="float">
+            Отдел продаж:<br>
+            <span class="big">+7 (812) 777 11 00</span>
+          </div>
+          <div class="clear"></div>
+          <div class="float-85">Режим работы:</div>
+          <div class="float">Ежедневно<br>9:00-21:00</div>
+          <div class="clear"></div>                            
+        </div>
+        <div class="data" id="data-honda">
+          <div class="zag">Контакты холдинга Honda:</div>
+          <div class="float-85">Телефон:</div>
+          <div class="float">
+              Отдел продаж:<br>
+              <span class="big">+7 (812) 77777-65</span>
+          </div>
+          <div class="clear"></div>
+          <div class="float-85">Режим работы:</div>
+          <div class="float">Ежедневно<br>9:00-21:00</div>
+          <div class="clear"></div>                            
+        </div>
+        <div class="data" id="data-trade1">
+          <div class="zag">Контакты холдинга Trade-in:</div>
+          <div class="float-85">Телефон:</div>
+          <div class="float">
+            Отдел продаж:<br>
+            <span class="big">+7 (812) 331-09-54</span>
+          </div>
+          <div class="clear"></div>
+          <div class="float-85">Режим работы:</div>
+          <div class="float">Ежедневно<br>9:00-21:00</div>
+          <div class="clear"></div>                            
+        </div>
+        <div class="data" id="data-hyundai">
+          <div class="zag">Контакты холдинга Hyundai:</div>
+          <div class="float-85">Телефон:</div>
+          <div class="float">
+              Отдел продаж:<br>
+              <span class="big">+7 (812) 7777-002</span>
+          </div>
+          <div class="clear"></div>
+          <div class="float-85">Режим работы:</div>
+          <div class="float">Ежедневно<br>9:00-21:00</div>
+          <div class="clear"></div>                            </div>
+        <div class="data" id="data-suzuki">
+          <div class="zag">Контакты холдинга Suzuki:</div>
+          <div class="float-85">Телефон:</div>
+          <div class="float">
+            Отдел продаж:<br>
+            <span class="big">+7 (812) 7777 008</span>
+          </div>
+          <div class="clear"></div>
+          <div class="float-85">Режим работы:</div>
+          <div class="float">Ежедневно<br>9:00-21:00</div>
+          <div class="clear"></div>                            </div>
+        <div class="data" id="data-trade2">
+          <div class="zag">Контакты холдинга Trade-in:</div>
+          <div class="float-85">Телефон:</div>
+          <div class="float">
+            Отдел продаж:<br>
+            <span class="big">+7 (812) 331-09-53</span>
+          </div>
+          <div class="clear"></div>
+          <div class="float-85">Режим работы:</div>
+          <div class="float">Ежедневно<br>9:00-21:00</div>
+          <div class="clear"></div>                       
+        </div>
       </div>
-    </section>
+      <div class="contacts-go"><a href="#">Перейти к контактам &gt;</a></div>
+    </div>     
+    <div id="map" class="noPrint"></div>
+      <script>
+        Map.lat = 59.99;
+        Map.lng = 30.34;
+        Map.zoom = 11;
+        Map.points = {};	  Map.points["point1"] = new Map.Point({	    id: "point1",	    lat: 59.992,	    lng: 30.255,	    zoom: 12,	    html: '<b>Сервис Максимум</b><br />СПб, Торфяная дорога, 8/3'	  });	Map.points["point2"] = new Map.Point({	  id: "point2",	  lat: 60.02312048982813,	  lng: 30.437426082031177,	  zoom: 12,	  html: '<b>Сервис Максимум</b><br />Санкт-Петербург, ул. Руставели, д. 53'	});	</script>
+    </div>
+  </section>
+  
   
   
   
