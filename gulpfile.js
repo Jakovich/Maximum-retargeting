@@ -49,12 +49,12 @@ gulp.task("minjs", function(){
 });
 
 gulp.task("image", function(){
-  return gulp.src("img/**/*.{png,jpg,gif}")
+  return gulp.src("i/**/*.{png,jpg,gif}")
   .pipe(imagemin({
     optimizationLevel: 3,
     progressive: true 
   }))
-  .pipe(gulp.dest("build/img"))
+  .pipe(gulp.dest("build/i"))
 });
 
 gulp.task("clean", function () {
@@ -63,11 +63,11 @@ gulp.task("clean", function () {
 });
 
 gulp.task("sprite", function(){
-  var spriteData = gulp.src('img/icons/*.png').pipe(spritesmith({
+  var spriteData = gulp.src('i/icons/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.less'
   }));
-    spriteData.img.pipe(gulp.dest('img')); 
+    spriteData.img.pipe(gulp.dest('i')); 
     spriteData.css.pipe(gulp.dest('less/sprites')); 
 });
 

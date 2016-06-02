@@ -51,33 +51,33 @@ $(document).ready(function() {
   
   //задаем адреса картинок по маркам и размерам
   var FORD = {
-    "BIG": "img/ford-focus-1.jpg",
-    "LONG": "img/ford-focus-3.jpg",
-    "SMALL": "img/ford-focus-2.jpg"
+    "BIG": "i/ford-focus-1.jpg",
+    "LONG": "i/ford-focus-3.jpg",
+    "SMALL": "i/ford-focus-2.jpg"
   };
   
   var HYUNDAI = {
-    "BIG": "img/hyundai-solaris-1.jpg",
-    "LONG": "img/hyundai-solaris-3.jpg",
-    "SMALL": "img/hyundai-solaris-2.jpg"
+    "BIG": "i/hyundai-solaris-1.jpg",
+    "LONG": "i/hyundai-solaris-3.jpg",
+    "SMALL": "i/hyundai-solaris-2.jpg"
   };
   
   var SUZUKI = {
-    "BIG": "img/suzuki-vitara-1.jpg",
-    "LONG": "img/suzuki-vitara-3.jpg",
-    "SMALL": "img/suzuki-vitara-2.jpg"
+    "BIG": "i/suzuki-vitara-1.jpg",
+    "LONG": "i/suzuki-vitara-3.jpg",
+    "SMALL": "i/suzuki-vitara-2.jpg"
   };
   
   var MITSUBISHI = {
-    "BIG": "img/mitsubishi-outlander-1.jpg",
-    "LONG": "img/mitsubishi-outlander-3.jpg",
-    "SMALL": "img/mitsubishi-outlander-2.jpg"
+    "BIG": "i/mitsubishi-outlander-1.jpg",
+    "LONG": "i/mitsubishi-outlander-3.jpg",
+    "SMALL": "i/mitsubishi-outlander-2.jpg"
   };
   
   var HONDA = {
-    "BIG": "img/honda-crv-1.jpg",
-    "LONG": "img/honda-crv-3.jpg",
-    "SMALL": "img/honda-crv-2.jpg"
+    "BIG": "i/honda-crv-1.jpg",
+    "LONG": "i/honda-crv-3.jpg",
+    "SMALL": "i/honda-crv-2.jpg"
   };
   
   //функция установки адресов картинок
