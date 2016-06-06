@@ -97,7 +97,7 @@ $(document).ready(function() {
         break;
         
       case "honda":
-        setSrc(HONDA, SUZUKI, MITSUBISHI, FORD, HYUNDAI);
+        setSrc(HONDA, FORD, MITSUBISHI, SUZUKI, HYUNDAI);
         break;
         
       case "ford":
